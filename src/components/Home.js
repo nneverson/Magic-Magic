@@ -1,26 +1,9 @@
-import React, { useState, useEffect } from 'react';
-
+import React from 'react';
+import Animes from './Animes'
 const Home = () => {
-    const [ anime, setAnime ] = useState([]);
-    
-    
-    useEffect(() => {
-       
-        
-    }, [])
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     return (
         <div>
-            <h1>this is the home comeponent</h1>
+            <Animes />
         </div>
     );
 };
