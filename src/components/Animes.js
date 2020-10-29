@@ -1,25 +1,38 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const shows = [
 	{
 		image: 'https://cdn.myanimelist.net/images/anime/11/55225.jpg',
 		title: 'Mahou Shoujo Madoka★Magica',
 		id: 9756,
-
 	},
 	{
-		image: 'https://cdn.myanimelist.net/images/anime/11/55225.jpg',
-		title: 'Mahou Shoujo Madoka★Magica',
-		id: 9756,
+		image: 'https://cdn.myanimelist.net/images/anime/2/81087.jpg',
+		title: 'magical girl raising project',
+		id: 33003,
 	},
 	{
-		image: 'https://cdn.myanimelist.net/images/anime/11/55225.jpg',
-		title: 'Mahou Shoujo Madoka★Magica',
-		id: 9756,
+		image: 'https://cdn.myanimelist.net/images/anime/4/51071.jpg',
+		title: 'magical girl site',
+		id: 36266,
 	},
-
- ]
+	{
+		image: 'https://cdn.myanimelist.net/images/anime/1514/100469.jpg',
+		title: 'Magical Girl Special Ops Asuka',
+		id: 94235,
+	},
+	{
+		image: 'https://cdn.myanimelist.net/images/anime/8/77057.jpg',
+		title: 'Yuuki Yuuna is a Hero',
+		id: 25519,
+	},
+	{
+		image: 'https://cdn.myanimelist.net/images/anime/1798/91548.jpg',
+		title: 'School-Live!',
+		id: 55163,
+	},
+];
 const Animes = () => {
 	const [animes, setAnimes] = useState(shows);
 
@@ -38,3 +51,4 @@ const Animes = () => {
 };
 
 export default Animes;
+/// This is the landing page where all the shows are listed in a grid. Linked to was used to make each picture and title clickable. It should lead to more details about whichever show that was clicked.

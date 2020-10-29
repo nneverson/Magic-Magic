@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const AnimeDetails = ({ props }) => {
+const AnimeDetails = ({ match }) => {
+	const [animeDetails, setAnimeDetails] = useState(null);
+
+	const detailsUrl = `https://api.jikan.moe/v3/anime/${match.params.id}`;
+
+	useEffect(() => {
+		fetch(detailsUrl)
+			.then((response) => response.json())
+			.then((Json) => {
+				setAnimeDetails(Json);
+			});
+	}, []);
+	if (!animeDetails) {
+		return <p>page loading</p>;
+	}
 	return (
-		<div>
-			<h4>Madoka Magica</h4>
-			<img src='https://cdn.myanimelist.net/images/anime/11/55225.jpg?s=cff930c5de079dbeab2107067050e03c' />
-            <div className='details'>
-                <p>
-                    loremIpsum
-                </p>
-            </div>
+		<div className='details-container'>
+			<p>{animeDetails.title}</p>
 		</div>
 	);
 };
