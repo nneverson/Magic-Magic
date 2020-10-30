@@ -1,17 +1,18 @@
 import React from 'react';
-import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
 import { Route } from 'react-router-dom';
 import Animes from './components/Animes';
 import AnimeDetails from './components/AnimeDetails';
+import Navbar from './components/Navbar/Navbar';
+
 
 const App = () => {
 	return (
 		<div>
-			<Nav />
+			<Navbar />
 			<Home />
-			
+
 			<main>
 				<Route path='/' exact component={Animes} />
 				<Route
