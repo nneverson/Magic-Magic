@@ -17,7 +17,12 @@ const AnimeDetails = ({ match }) => {
 	}
 	return (
 		<div className='details-container'>
+			<div>
+				<img src={animeDetails.image_url} />
+			</div>
+			<p>{animeDetails.title_english}</p>
 			<p>{animeDetails.title}</p>
+			<p>{animeDetails.synopsis}</p>
 		</div>
 	);
 };

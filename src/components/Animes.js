@@ -20,7 +20,7 @@ const shows = [
 	{
 		image: 'https://cdn.myanimelist.net/images/anime/1514/100469.jpg',
 		title: 'Magical Girl Special Ops Asuka',
-		id: 94235,
+		id: 37979,
 	},
 	{
 		image: 'https://cdn.myanimelist.net/images/anime/8/77057.jpg',

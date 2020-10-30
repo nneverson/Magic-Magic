@@ -14,7 +14,6 @@ const App = () => {
 			
 			<main>
 				<Route path='/' exact component={Animes} />
-				<Route path='/' exact component={Animes} />
 				<Route
 					path='/details/:id'
 					render={(routerProps) => <AnimeDetails match={routerProps.match} />}
