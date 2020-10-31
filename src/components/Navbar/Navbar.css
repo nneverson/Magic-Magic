@@ -1,11 +1,4 @@
-/* * {
-	box-sizing: border-box;
-	margin: 0;
-    border: 0;
-    font-family: 'Syne Mono', monospace;
-
-} */
-.NavbarItems {
+/* .NavbarItems {
 	background: rgb(2, 0, 36);
 	background: linear-gradient(
 		90deg,
@@ -33,8 +26,8 @@
 	justify-content: end;
 	margin-right: 1rem;
 	/* margin: 20px; */
-}
-@media screen and (max-width 960px) {
+} */
+@media screen and (max-width: 360px) {
 	.NavbarItems {
 		position: relative;
 	}

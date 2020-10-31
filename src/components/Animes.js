@@ -37,11 +37,11 @@ const Animes = () => {
 	const [animes, setAnimes] = useState(shows);
 
 	return (
-		<section className='container'>
+		<section className='card-container'>
 			{animes.map((anime) => (
 				<Link to={`./details/${anime.id}`} key={anime.id}>
 					<div className='card'>
-						<img src={anime.image} />
+						<div><img src={anime.image} /></div>
 						<h4>{anime.title}</h4>
 					</div>
 				</Link>
@@ -51,4 +51,4 @@ const Animes = () => {
 };
 
 export default Animes;
-/// This is the landing page where all the shows are listed in a grid. Linked to was used to make each picture and title clickable. It should lead to more details about whichever show that was clicked.
+/// This is the home page where all the shows are listed in a grid. Linked to was used to make each picture and title clickable. It should lead to more details about whichever show that was clicked.

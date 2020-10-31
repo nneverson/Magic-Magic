@@ -4,22 +4,23 @@ import About from './components/About';
 import { Route } from 'react-router-dom';
 import Animes from './components/Animes';
 import AnimeDetails from './components/AnimeDetails';
-import Navbar from './components/Navbar/Navbar';
-
+import Navbar2 from './components/Navbar/Navbar2';
+import './components/App.css';
 
 const App = () => {
 	return (
 		<div>
-			<Navbar />
+			<Navbar2 />
 			<Home />
 
 			<main>
+				<Route path='/about' exact component={About} />
+				<Route path='/home' exact component={Home} />
 				<Route path='/' exact component={Animes} />
 				<Route
 					path='/details/:id'
 					render={(routerProps) => <AnimeDetails match={routerProps.match} />}
 				/>
-				<Route path='/about' exact component={About} />
 			</main>
 		</div>
 	);
