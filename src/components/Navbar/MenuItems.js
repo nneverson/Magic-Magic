@@ -5,9 +5,5 @@ export const MenuItems = [
 		cName: 'nav-links',
 	},
 	{ title: 'About', url: '/about', cName: 'nav-links' },
-	// {
-	//     title: 'request an anime',
-	//     url: '#',
-	//     cName: 'nav-links-mobile',
-	// }
+
 ];

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { Card } from 'react-bootstrap';
 const shows = [
 	{
 		image: 'https://cdn.myanimelist.net/images/anime/11/55225.jpg',
@@ -28,9 +28,9 @@ const shows = [
 		id: 25519,
 	},
 	{
-		image: 'https://cdn.myanimelist.net/images/anime/1798/91548.jpg',
-		title: 'School-Live!',
-		id: 55163,
+		image: 'https://cdn.myanimelist.net/images/anime/7/6770.jpg',
+		title: 'Magical Girl Lyrical Nanoha',
+		id: 76,
 	},
 ];
 const Animes = () => {
@@ -40,10 +40,14 @@ const Animes = () => {
 		<section className='card-container'>
 			{animes.map((anime) => (
 				<Link to={`./details/${anime.id}`} key={anime.id}>
-					<div className='card'>
-						<div><img src={anime.image} /></div>
-						<h4>{anime.title}</h4>
-					</div>
+					<Card style={{ width: '13rem' }}>
+						<Card.Img variant='top' src={anime.image} />
+						<Card.Body style={{ backgroundColor: 'white' }}>
+							<Card.Text style={{ backgroundColor: 'white' }}>
+								{anime.title}
+							</Card.Text>
+						</Card.Body>
+					</Card>
 				</Link>
 			))}
 		</section>

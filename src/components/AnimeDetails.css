@@ -1,0 +1,18 @@
+.details-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	margin: 0 auto;
+}
+.synopsis {
+	width: 500px;
+	height: 500px;
+	border: 2px solid black;
+
+}
+/* main {
+	display: flex;
+	justify-items: center;
+} */
+@import 'bootstrap/dist/css/bootstrap.min.css';
