@@ -29,7 +29,7 @@ const AnimeDetails = ({ match }) => {
 				<p>{animeDetails.title}</p>
 			</div>
 			<div className='synopsis'>
-				<p>{animeDetails.synopsis}</p>
+				<p >{animeDetails.synopsis}</p>
 			</div>
 		</div>
 	);

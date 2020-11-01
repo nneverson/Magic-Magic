@@ -11,7 +11,7 @@ const Home = () => {
 					alt='First slide'
 				/>
 			</Carousel.Item>
-			<Carousel.Item interval={500}>
+			<Carousel.Item interval={1000}>
 				<img
 					className='d-block w-100'
 					src='https://simkl.net/fanart/76/7659806abce1bc3dc_0.jpg'

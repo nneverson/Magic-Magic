@@ -7,19 +7,15 @@ import AnimeDetails from './components/AnimeDetails';
 import Navbar2 from './components/Navbar/Navbar2';
 import './components/App.css';
 
-
 const App = () => {
 	return (
 		<div>
 			<Navbar2 />
-			
-			
 
 			<main>
-				
 				<Route path='/about' exact component={About} />
-				<Route path='/home' exact component={Home} />
-				<Route path='/' exact component={Animes} />
+				<Route path='/' exact component={Home} />
+				<Route path='/home' exact component={Animes} />
 				<Route
 					path='/details/:id'
 					render={(routerProps) => <AnimeDetails match={routerProps.match} />}

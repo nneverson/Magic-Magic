@@ -7,9 +7,9 @@
 }
 .synopsis {
 	width: 500px;
-	height: 500px;
+	height: auto;
 	border: 2px solid black;
-
+	padding: 20px;
 }
 /* main {
 	display: flex;

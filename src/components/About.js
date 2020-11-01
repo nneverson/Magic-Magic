@@ -3,10 +3,10 @@ import React from 'react';
 const About = () => {
 	return (
 		<div>
-			<h1>About this app</h1>
 			<div className='aboutText'>
-				This app was created to be a resource for those who want to get a taste
-				of something different when it comes to magical girl animes.
+			<h1>About this app</h1>
+				<p>This app was created to be a resource for those who want to get a taste
+				of something different when it comes to magical girl animes. The shows in this data base have adult themes such as graphic violence, and psycholocially disturbing events. For age 17 +</p>
 			</div>
 		</div>
 	);

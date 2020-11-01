@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 const Navbar2 = () => {
   return (
     <Navbar collapseOnSelect variant="light" expand="md">
-      <Navbar.Brand as={Link} to="/home">
+      <Navbar.Brand as={Link} to="/">
         Magic Magic
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav>
-          <Nav.Link as={Link} to="/">
+          <Nav.Link as={Link} to="/home">
             Home
           </Nav.Link>
         
