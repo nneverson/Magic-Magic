@@ -41,13 +41,11 @@
 	align-items: center;
 	height: 380px;
 	font-family: 'Syne Mono', monospace, sans-serif;
-
 }
 .navbar {
 	display: flex;
 	justify-items: space-between;
 	font-family: 'Syne Mono', monospace, sans-serif;
-
 }
 .aboutText {
 	display: flex;
@@ -57,12 +55,11 @@
 	align-items: center;
 	flex-direction: column;
 }
-.aboutText p{
+.aboutText p {
 	border: 2px solid black;
 	width: 500px;
 	height: auto;
 	padding: 20px;
-
 }
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
@@ -79,5 +76,18 @@
 		display: flex;
 		/* align-items: center; */
 		justify-content: center;
+	}
+	.aboutText p {
+		border: 2px solid black;
+		width: 200px;
+		height: auto;
+		padding: 20px;
+	}
+	.synopsis {
+		width: 200px;
+		max-height: 150px;
+		border: 2px solid black;
+		padding: 20px;
+		overflow: auto;
 	}
 }
