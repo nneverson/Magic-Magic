@@ -11,8 +11,5 @@
 	border: 2px solid black;
 	padding: 20px;
 }
-/* main {
-	display: flex;
-	justify-items: center;
-} */
+
 @import 'bootstrap/dist/css/bootstrap.min.css';

@@ -55,4 +55,4 @@ const Animes = () => {
 };
 
 export default Animes;
-/// This is the home page where all the shows are listed in a grid. Linked to was used to make each picture and title clickable. It should lead to more details about whichever show that was clicked.
+

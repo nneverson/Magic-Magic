@@ -34,6 +34,7 @@
 - Video player plays full episodes of the series
 ### Gold
 - Users can create accounts and bookmark their favorite show/ episodes and create 'want to watch' lists
+- Users are able to submit requests.
 
 ## Technology Used
 - React
