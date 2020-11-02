@@ -55,6 +55,12 @@
 	height: auto;
 	padding: 20px;
 }
+.form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	transform: translate( 0%, 100%);
+}
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
